@@ -1,0 +1,10 @@
+<tr>
+		<td><%= cadastro.nome.upcase %></td>
+		<td><%= cadastro.cpf %></td>
+		<td><%= cadastro.rg %></td>
+		<td><%= cadastro.telefone %></td>
+		<td><%= cadastro.veiculo %></td>
+		<td><%= link_to "Ver Detalhes", cadastro_path(cadastro), class: "btn btn-info" %></td>
+		<td> <%= link_to "Editar", edit_cadastro_path(cadastro), class: "btn btn-warning" %></td>
+		<td><%= button_to "Deletar", cadastro, method: :delete, class: "btn btn-danger" %></td>
+</tr>

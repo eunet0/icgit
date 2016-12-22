@@ -1,0 +1,158 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.h4-center {
+	text-align: center;
+}
+
+.navbar {
+	background-color: #B22222 ;
+	color: black;
+	font-family: Arial;
+
+}
+
+li {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-family: Arial;
+}
+
+.h1-index {
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #B22222;
+	color: white;
+	font-size: 35px;
+	padding: 25px;
+	font-family: Arial;
+}
+
+.h2-index {
+	text-align: center;
+	text-transform: uppercase;
+	color: black;
+	font-family: Arial;
+}
+
+.imagem {
+	text-align: center;
+	color: black;
+	font-family: Arial;
+
+}
+
+.h1-dev {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: Arial;
+	font-size: 55px;
+	color: white;
+	border: solid;
+	background-color: #1E90FF;
+	padding: 25px;
+	border-radius: 40px;
+	width: 100%;
+
+}
+
+.h2-dev {
+	color: black;
+	font-size: 40px;
+	font-family: Arial;
+}
+
+
+.h3-dev {
+
+	font-size: 35px;
+
+}
+
+.p-dev1 {
+	font-family: Arial, Verdana;
+	font-size: 25px;
+
+
+}
+
+
+.p-dev2 {
+	text-align: ;
+	font-size: 25px;
+
+}
+
+.img-dev {
+	float: right;
+}
+
+
+.image-right {
+	float: right;
+}
+
+
+.h4-busca {
+	color: black;
+	font-family: Arial;
+	font-size: 20px;
+}
+
+
+
+span {
+	color: #B22222;
+	font-family: Arial;
+	font-size: 20px;
+}
+
+
+footer {
+	background-color: #1E90FF;
+	color: white;
+	font-family: arial,Arial;
+	font-size: 15px;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+
+}
+
+
+.footer-ic {
+	background-color: #B22222;
+}
+
+a {
+	color: white;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.alert {
+	background-color: red;
+}
+
+.ic-link {
+	color: white;
+	font-family: Arial;
+	font-size: 40px;
+}

@@ -1,0 +1,28 @@
+<div class="navbar">
+		<h4 class="h4-busca"> <span><%= link_to "ICadastra", root_url %></span> 
+		<%= form_tag busca_cadastro_path, method: :get, class: "navbar-form navbar-right"%>
+		<%= text_field_tag :nome, "Pesquisa por Nome" %>
+		<%= button_to "Procurar", class: "btn btn-default" %>
+		</h4>		
+</div>
+
+<center><%= image_tag("motorista.jpg",size: "350", class: "img img-responsive") %></center><br><br>
+
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>CPF</th>
+			<th>RG</th>
+			<th>Telefone</th>
+			<th>Veículo</th>
+		</tr>
+	</thead> 
+
+	<tbody>
+
+	<%= render @cadastros%>
+	
+	</tbody>
+
+</table>

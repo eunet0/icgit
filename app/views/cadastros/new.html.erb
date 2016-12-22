@@ -1,0 +1,36 @@
+<div class="navbar">
+		<h4 class="h4-busca"> <span><%= link_to "ICadastra", root_url %></span> 
+		<%= form_tag busca_cadastro_path, method: :get, class: "navbar-form navbar-right"%>
+		<%= text_field_tag :nome, "Pesquisa por Nome" %>
+		<%= button_to "Procurar", class: "btn btn-default" %>
+		</h4>		
+</div>
+
+<div class="container">
+<%@cadastro.errors.full_messages.each do |message| %>
+	<div class="alert alert-danger" role="alert">
+		<%=message %>
+	</div>
+<%end%>
+
+<p class="imagem"> <%= image_tag("http://icon-icons.com/icons2/154/PNG/512/user_add_21977.png", size:"300") %> </p>
+
+<%= simple_form_for @cadastro do |f| %>
+	<%= f.label :nome %>
+	<%= f.text_field :nome, class: "form-control" %>
+	<%= f.label :rg %>
+	<%= f.text_field :rg, class: "form-control" %>
+	<%= f.label :cpf %>
+	<%= f.text_field :cpf, class: "form-control" %>
+	<%= f.label :telefone %>
+	<%= f.text_field :telefone, class: "form-control" %>	
+	<%= f.label :image %>
+	<%= f.text_field :image, class: "form-control" %>
+	<%= f.label :cidade %>
+	<%= f.text_field :cidade, class: "form-control" %><br>
+	<%= f.input :veiculo, collection: @veiculos, class: "form-control" %><br>
+	<%= f.submit "Cadastrar", class: "btn btn-success" %>
+	
+<%end%>
+<br><br><br>
+</div>

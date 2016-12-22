@@ -1,0 +1,28 @@
+<div class="navbar">
+
+		<h4 class="h4-busca"> <a class="ic-link" href="http://localhost:3000/">IC Transportes</a>
+		<%= form_tag busca_cadastro_path, method: :get, class: "navbar-form navbar-right"%>
+		<%= text_field_tag :nome, "Pesquisa por Nome" %>
+		<%= button_to "Procurar", class: "btn btn-success" %>
+		</h4>			
+</div>
+
+<div class="container">
+<main>
+		<h1 class="h1-index">bem-vindo ao icadastra</h1><br>
+		
+		<p class="imagem"><%= image_tag("logo.jpg", width: "440", height: "340", class: "img img-rounded") %></p>
+	
+		<h2 class="h2-index">o que deseja fazer ?</h2><br>
+		
+		<center>
+			<%= link_to "Ver Cadastrados", todos_cadastros_path, class: "btn btn-primary btn-lg" %>
+			<%= link_to "Novo Cadastro", novo_cadastro_path, class: "btn btn-primary btn-lg" %>
+		</center>
+		<br><br><br>
+</main>
+</div>
+
+<footer class="footer-ic">
+	&copy; IC Transportes LTDA. Todos os direitos reservados - 2016 
+</footer>

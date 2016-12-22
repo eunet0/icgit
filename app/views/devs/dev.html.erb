@@ -1,0 +1,31 @@
+<div class="container">
+
+	<main>
+
+		<h1 class="h1-dev">Hello World!</h1><br><br>
+		
+		<p class="img-dev"> <%= image_tag("dev.jpeg", height: "350", width: "300",class: "img img-rounded img-responsive")%></p>
+		
+		<h3 class="h3-dev">Bem-vindo à minha página pessoal :)</h3><br><br>
+				
+		<p class="p-dev1"> Eu me chamo José Neto, sou estudante de Análise e Desenvolvimento de Sistemas, e um dos desenvolvedores da aplicação Icadastros.</p>
+		<p class="p-dev2">Você pode encontrar mais informações sobre mim nos seguintes links:</p><br><br>
+			
+		
+		<ul>
+			<center>
+				<li><%= link_to image_tag("face.png", size:"50"), "https://www.facebook.com/eunet0"%></li>
+				<li><%= link_to image_tag("insta.png",size: "50"), "https://www.instagram.com/netonap/"%></li>
+				<li><%= link_to image_tag("git.svg",size: "50"), "https://www.github.com"%></li>
+				<li><%= link_to image_tag("twitter.png",size: "50"), "https://twitter.com/eunet0"%></li>
+			</center>
+		</ul>
+
+	</main>
+
+</div>
+
+<br><br><br><br>
+<footer>
+		<a href="/dev.html"> &copy; Desenvolvido por José Neto </a>
+</footer>
